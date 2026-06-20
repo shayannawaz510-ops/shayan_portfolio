@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <!-- ================================ DOCUMENT METADATA ================================ -->
+    <!-- Essential character encoding and viewport for rendering consistency across devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- ================================ PRIMARY META TAGS ================================ -->
+    <!-- SEO-optimized title targeting high-intent search queries for ML engineers and full-stack developers -->
+    <title>Shayan Nawaz | Senior Python Developer & Machine Learning Engineer</title>
+    
+    <!-- Comprehensive meta description targeting multiple search intents: ML/AI, Full Stack, Data Analytics -->
+    <meta name="description" content="Portfolio of Shayan Nawaz, a Software Engineer specializing in AI, Machine Learning models, Data Analytics, and scalable Full-Stack Web Applications. Explore technical projects, case studies, and enterprise solutions.">
+    
+    <!-- Keywords metadata for search intent targeting (informational & commercial queries) -->
+    <meta name="keywords" content="Machine Learning Engineer, Python Developer, Full Stack Web Developer, Data Analyst, AI Solutions, Deep Learning, Computer Vision, REST APIs, Tailwind CSS, Database Architecture">
+    
+    <!-- Author and copyright metadata for SERP attribution -->
+    <meta name="author" content="Shayan Nawaz">
+    <meta name="copyright" content="© 2026 Shayan Nawaz. All rights reserved.">
+    
+    <!-- Canonical URL to prevent duplicate content penalties from search engines -->
+    <link rel="canonical" href="https://shayannawaz.dev">
+    
+    <!-- ================================ OPEN GRAPH PROTOCOL (OG) ================================ -->
+    <!-- OG tags ensure rich previews across social platforms (LinkedIn, Twitter, Facebook) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://shayannawaz.dev">
+    <meta property="og:title" content="Shayan Nawaz | Senior Python Developer & Machine Learning Engineer">
+    <meta property="og:description" content="Portfolio of Shayan Nawaz, a Software Engineer specializing in AI, Machine Learning models, Data Analytics, and scalable Full-Stack Web Applications. Explore technical projects, case studies, and enterprise solutions.">
+    <!-- OG image: 1200x630px minimum for optimal social sharing and rich cards -->
+    <meta property="og:image" content="https://shayannawaz.dev/assets/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Shayan Nawaz Portfolio - Senior ML Engineer & Full Stack Developer">
+    
+    <!-- ================================ TWITTER CARD PROTOCOL ================================ -->
+    <!-- Twitter Card directive (summary_large_image) for maximum engagement on X/Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://shayannawaz.dev">
+    <meta name="twitter:title" content="Shayan Nawaz | Senior Python Developer & Machine Learning Engineer">
+    <meta name="twitter:description" content="Portfolio of Shayan Nawaz, a Software Engineer specializing in AI, Machine Learning models, Data Analytics, and scalable Full-Stack Web Applications.">
+    <meta name="twitter:image" content="https://shayannawaz.dev/assets/og-image.jpg">
+    <meta name="twitter:image:alt" content="Shayan Nawaz Portfolio - Senior ML Engineer & Full Stack Developer">
+    <meta name="twitter:creator" content="@shayannawaz">
+    
+    <!-- ================================ SEARCH ENGINE & INDEXING DIRECTIVES ================================ -->
+    <!-- Explicitly instruct search engines to index and follow links (standard for portfolio/CV sites) -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Schema.org compliance markup for enhanced SERP features (FAQ, job posting, etc.) -->
+    <meta name="google-site-verification" content="your-verification-code-here">
+    
+    <!-- ================================ PERFORMANCE & RENDERING OPTIMIZATION ================================ -->
+    <!-- DNS prefetch and preconnect directives reduce latency for external resource loading by 100-300ms -->
+    <!-- This aggressive prefetching strategy is critical for achieving sub-500ms LCP (Largest Contentful Paint) -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- Preconnect with crossorigin for CORS-enabled resources (fonts) - initiates TCP handshake early -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CRITICAL: Preload hero image with fetchpriority="high" to force immediate LCP -->
+    <!-- This ensures the hero section renders in the initial paint, achieving sub-500ms LCP -->
+    <!-- fetchpriority="high" signals to the browser that this resource is critical for initial render -->
+    <link rel="preload" as="image" href="shayan.png" type="image/png" fetchpriority="high">
+    
+    <!-- ================================ FAVICON & BRANDING ================================ -->
+    <!-- Favicon markup for browser tabs and bookmarks (improves brand recognition in SERPs) -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- ================================ GOOGLE FONTS WITH FONT-DISPLAY SWAP ================================ -->
+    <!-- font-display=swap prevents FOUT (Flash of Unstyled Text) and ensures optimal CLS score -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- ================================ EXTERNAL STYLESHEETS & LIBRARIES ================================ -->
+    <!-- Font Awesome CDN for semantic icon rendering -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-...[integrity-hash]..." crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Core JavaScript Framework (Tailwind CSS) -->
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    
+    <!-- Tailwind Configuration & Theme Variables -->
+    <script src="js/head.js" defer></script>
+    
+    <!-- Project-Specific Stylesheet (Critical CSS inlined where possible) -->
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+    
+    <!-- ================================ JSON-LD STRUCTURED DATA ================================ -->
+    <!-- Structured data using @graph for semantic SEO: establishes entity relationships for search engines -->
+    <!-- This schema powers Rich Snippets, Knowledge Panels, and enhanced SERP features -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://shayannawaz.dev/#person",
+          "name": "Shayan Nawaz",
+          "url": "https://shayannawaz.dev",
+          "email": "shayannawaz510@gmail.com",
+          "telephone": "+92-310-1116773",
+          "jobTitle": ["Machine Learning Engineer", "Senior Full Stack Software Engineer", "Data Analyst"],
+          "image": "https://shayannawaz.dev/images/shayan.jpg",
+          "description": "Senior Software Engineer specializing in Machine Learning, AI solutions, and full-stack web development.",
+          "knowsAbout": [
+            "Machine Learning",
+            "Deep Learning",
+            "Predictive Analytics",
+            "Computer Vision",
+            "Natural Language Processing",
+            "Python Development",
+            "REST APIs",
+            "Tailwind CSS",
+            "Database Architecture",
+            "Data Science",
+            "Full Stack Development"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/shayan-nawaz-35b2a7406",
+            "https://github.com/shayannawaz510-ops",
+            "https://www.instagram.com/shayan_nawazz?igsh=MXg3YjU0b2gyanRuMw=="
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Independent"
+          },
+          "location": {
+            "@type": "Place",
+            "name": "Peshawar, Pakistan"
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://shayannawaz.dev/#website",
+          "url": "https://shayannawaz.dev",
+          "name": "Shayan Nawaz | Senior Python Developer & Machine Learning Engineer",
+          "description": "Portfolio showcasing expertise in AI, Machine Learning, Full Stack Web Development, and Data Analytics solutions.",
+          "inLanguage": "en-US",
+          "creator": {
+            "@id": "https://shayannawaz.dev/#person"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://shayannawaz.dev?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://shayannawaz.dev/#project-1",
+          "name": "Student Performance Prediction System",
+          "description": "AI-based machine learning system utilizing Python and Scikit-Learn to forecast academic trajectories using predictive analytics and behavioral data modeling.",
+          "url": "https://shayannawaz.dev/#projects",
+          "creator": {
+            "@id": "https://shayannawaz.dev/#person"
+          },
+          "programmingLanguage": ["Python", "Scikit-Learn", "Pandas", "NumPy"],
+          "applicationCategory": "Machine Learning",
+          "dateCreated": "2023-01-15",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://shayannawaz.dev/#project-2",
+          "name": "Sales Analytics Dashboard",
+          "description": "Interactive Business Intelligence dashboard transforming raw sales data into actionable KPIs using Pandas, Power BI, and real-time visualization techniques.",
+          "url": "https://shayannawaz.dev/#projects",
+          "creator": {
+            "@id": "https://shayannawaz.dev/#person"
+          },
+          "programmingLanguage": ["Python", "Pandas", "Power BI", "SQL"],
+          "applicationCategory": "Data Analytics",
+          "dateCreated": "2023-06-20",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://shayannawaz.dev/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://shayannawaz.dev"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Projects",
+              "item": "https://shayannawaz.dev/#projects"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Services",
+              "item": "https://shayannawaz.dev/#services"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Contact",
+              "item": "https://shayannawaz.dev/#contact"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+</head>
+<body class="antialiased selection:bg-accent selection:text-darkbg">
+
+    <!-- ================================ ANIMATED BACKGROUND ELEMENTS ================================ -->
+    <!-- Non-interactive decorative elements: aria-hidden prevents screen reader confusion -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full mix-blend-screen filter blur-[128px] animate-blob -z-10" aria-hidden="true"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full mix-blend-screen filter blur-[128px] animate-blob animation-delay-2000 -z-10" aria-hidden="true"></div>
+    <div class="fixed top-1/2 left-1/2 w-96 h-96 bg-accent/20 rounded-full mix-blend-screen filter blur-[128px] animate-blob animation-delay-4000 -z-10" aria-hidden="true"></div>
+
+    <!-- ================================ PRIMARY NAVIGATION HEADER ================================ -->
+    <!-- Semantic <header> tag improves page structure for SEO crawlers and accessibility -->
+    <header class="fixed w-full z-50 transition-all duration-300" id="header">
+        <nav class="transition-all duration-300 glass-panel border-b-0" id="navbar" aria-label="Main Navigation">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center w-full">
+                <!-- Brand/Logo with semantic anchor and descriptive title -->
+                <a href="#hero" class="text-2xl font-bold tracking-tighter text-white" title="Shayan Nawaz - Senior ML Engineer & Full Stack Developer">Shayan<span class="text-accent">.</span></a>
+                
+                <!-- Desktop Navigation Menu: semantic <ul> for accessibility crawlers -->
+                <ul class="hidden md:flex space-x-8 text-sm font-medium text-gray-300" role="navigation">
+                    <li><a href="#about" class="hover:text-accent transition-colors" title="About Me - Professional Background">About</a></li>
+                    <li><a href="#skills" class="hover:text-accent transition-colors" title="Technical Skills & Expertise">Skills</a></li>
+                    <li><a href="#services" class="hover:text-accent transition-colors" title="Services Offered">Services</a></li>
+                    <li><a href="#projects" class="hover:text-accent transition-colors" title="Featured Projects & Case Studies">Projects</a></li>
+                    <li><a href="#experience" class="hover:text-accent transition-colors" title="Career Evolution & Timeline">Experience</a></li>
+                </ul>
+                
+                <!-- CTA Button with semantic anchor -->
+                <a href="#contact" class="hidden md:inline-block px-6 py-2 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition-all text-sm font-medium" title="Get in Touch - Contact Form">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================================ MAIN CONTENT AREA ================================ -->
+    <main id="main-content">
+        <!-- ================================ HERO SECTION ================================ -->
+        <!-- Primary hero section establishing primary value proposition and unique selling points -->
+        <section id="hero" class="min-h-screen flex items-center justify-center relative px-6 pt-20" aria-label="Hero Introduction">
+            <div class="text-center z-10 max-w-4xl mx-auto gs-reveal">
+                <!-- Profile Avatar: explicit width/height prevents CLS (Cumulative Layout Shift) -->
+                <div class="w-32 h-32 mx-auto mb-8 rounded-full p-1 bg-gradient-to-r from-primary to-accent">
+                    <img 
+                        src="shayan.png" 
+                        alt="Shayan Nawaz - Senior ML Engineer & Full Stack Developer" 
+                        width="128" 
+                        height="128"
+                        class="w-full h-full rounded-full border-4 border-darkbg object-cover"
+                        loading="lazy">
+                </div>
+                <!-- PRIMARY H1: Critical SEO element - exactly ONE per page, positioned in hero -->
+                <!-- Targets high-intent search queries: "Senior ML Engineer", "Full Stack Developer" -->
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 tracking-tight text-white">
+                    Hi, I'm <span class="text-gradient">Shayan Nawaz</span>
+                </h1>
+                <!-- Dynamic role tagline generated by Typed.js: improves SERP click-through rate (CTR) -->
+                <h2 class="text-2xl md:text-4xl font-light text-gray-300 mb-8 h-12">
+                    I am a <span id="typed-text" class="font-semibold text-white"></span>
+                </h2>
+                <!-- Supporting copy: includes semantic keywords for LSI (Latent Semantic Indexing) -->
+                <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Transforming complex data and algorithms into elegant, scalable, and high-performance digital solutions.
+                </p>
+                
+                <!-- CTA Buttons with rel="noopener noreferrer" for external links (security best practice) -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-3 rounded-full bg-primary hover:bg-blue-700 text-white font-medium transition-all shadow-lg shadow-primary/30 hover:-translate-y-1" title="View Featured Projects & Case Studies">View Projects</a>
+                    <a href="#" class="w-full sm:w-auto px-8 py-3 rounded-full glass-panel hover:bg-white/10 text-white font-medium transition-all hover:-translate-y-1" title="Download Professional Resume (PDF)" rel="noopener noreferrer">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ ABOUT SECTION ================================ -->
+        <!-- Semantic article section establishing expertise credibility and professional authority -->
+        <section id="about" class="py-24 px-6 relative" aria-labelledby="about-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="text-center mb-16">
+                    <!-- H2 Hierarchy: Major sections use <h2> for semantic structure -->
+                    <h2 id="about-heading" class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                    <div class="w-20 h-1 bg-accent mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
+                <article class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center glass-panel p-8 md:p-12 rounded-3xl">
+                    <div>
+                        <!-- H3 Hierarchy: Subsection titles use <h3> -->
+                        <h3 class="text-2xl font-semibold mb-4 text-white">Bridging <span class="text-accent">AI</span> and <span class="text-accent">Software Engineering</span></h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        I am a passionate Software Engineer with expertise in Python Development, Machine Learning, Data Analysis, Web Development, Database Management, and Modern Frontend Technologies. I enjoy solving real-world problems through technology and building scalable, efficient, and user-friendly applications. My goal is to continuously learn emerging technologies and deliver innovative digital solutions.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div>
+                            <h4 class="text-white font-medium mb-2">Education Placeholder</h4>
+                            <p class="text-sm text-gray-400">B.S. Computer Science<br><span class="text-xs text-primary">2020 - 2024</span></p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-medium mb-2">Experience Placeholder</h4>
+                            <p class="text-sm text-gray-400">Software Engineer<br><span class="text-xs text-primary">2023 - Present</span></p>
+                        </div>
+                    </div>
+                </article>
+                <div class="grid grid-cols-2 gap-4" role="region" aria-label="Technical Expertise Areas">
+                    <article class="glass-panel p-6 rounded-2xl text-center tilt-card" aria-label="Full Stack Development Expertise">
+                        <i class="fa-solid fa-code text-3xl text-primary mb-4" aria-hidden="true"></i>
+                        <h4 class="font-semibold text-white">Full Stack</h4>
+                        <p class="text-xs text-gray-400 mt-2">End-to-End Development</p>
+                    </article>
+                    <article class="glass-panel p-6 rounded-2xl text-center tilt-card mt-8" aria-label="Machine Learning & AI Expertise">
+                        <i class="fa-solid fa-brain text-3xl text-secondary mb-4" aria-hidden="true"></i>
+                        <h4 class="font-semibold text-white">Machine Learning</h4>
+                        <p class="text-xs text-gray-400 mt-2">Predictive Models & AI Solutions</p>
+                    </article>
+                    <article class="glass-panel p-6 rounded-2xl text-center tilt-card -mt-8" aria-label="Data Analysis & Business Intelligence">
+                        <i class="fa-solid fa-chart-pie text-3xl text-accent mb-4" aria-hidden="true"></i>
+                        <h4 class="font-semibold text-white">Data Analysis</h4>
+                        <p class="text-xs text-gray-400 mt-2">Business Intelligence Insights</p>
+                    </article>
+                    <article class="glass-panel p-6 rounded-2xl text-center tilt-card" aria-label="Database Architecture & Design">
+                        <i class="fa-solid fa-database text-3xl text-blue-400 mb-4" aria-hidden="true"></i>
+                        <h4 class="font-semibold text-white">Architecture</h4>
+                        <p class="text-xs text-gray-400 mt-2">Scalable Systems</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ SKILLS SECTION ================================ -->
+        <!-- Technical expertise section with semantic skill cards for keyword targeting -->
+        <section id="skills" class="py-24 px-6 relative" aria-labelledby="skills-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="text-center mb-16">
+                    <h2 id="skills-heading" class="text-3xl md:text-4xl font-bold mb-4">Technical Proficiency</h2>
+                    <div class="w-20 h-1 bg-accent mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
+            
+                <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="region" aria-label="Technical Skills by Category">
+                    <article class="glass-panel p-8 rounded-3xl hover:border-primary/50 transition-colors" aria-label="Programming Languages">
+                        <h3 class="text-xl font-semibold mb-6 text-white border-b border-white/10 pb-4">Languages</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-gray-300">Python <i class="fa-brands fa-python text-primary" aria-hidden="true"></i></li>
+                            <li class="flex justify-between items-center text-gray-300">JavaScript <i class="fa-brands fa-js text-yellow-400" aria-hidden="true"></i></li>
+                            <li class="flex justify-between items-center text-gray-300">PHP <i class="fa-brands fa-php text-indigo-400" aria-hidden="true"></i></li>
+                            <li class="flex justify-between items-center text-gray-300">SQL <i class="fa-solid fa-database text-gray-400" aria-hidden="true"></i></li>
+                        </ul>
+                    </article>
+                    
+                    <article class="glass-panel p-8 rounded-3xl hover:border-secondary/50 transition-colors" aria-label="Machine Learning & Data Science">
+                        <h3 class="text-xl font-semibold mb-6 text-white border-b border-white/10 pb-4">ML & Data Science</h3>
+                        <ul class="space-y-3">
+                            <li class="text-sm px-3 py-1 glass-panel rounded-lg text-gray-300 inline-block m-1">Machine Learning</li>
+                            <li class="text-sm px-3 py-1 glass-panel rounded-lg text-gray-300 inline-block m-1">Data Analysis</li>
+                            <li class="text-sm px-3 py-1 glass-panel rounded-lg text-gray-300 inline-block m-1">Pandas & NumPy</li>
+                            <li class="text-sm px-3 py-1 glass-panel rounded-lg text-gray-300 inline-block m-1">Scikit-Learn</li>
+                            <li class="text-sm px-3 py-1 glass-panel rounded-lg text-gray-300 inline-block m-1">Jupyter / Colab</li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-panel p-8 rounded-3xl hover:border-accent/50 transition-colors" aria-label="Web Technologies">
+                        <h3 class="text-xl font-semibold mb-6 text-white border-b border-white/10 pb-4">Web Technologies</h3>
+                        <ul class="space-y-4">
+                            <li>
+                                <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Frontend (HTML/CSS/JS)</span></div>
+                                <div class="w-full bg-white/10 rounded-full h-1.5" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="bg-accent h-1.5 rounded-full" style="width: 90%"></div></div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Tailwind CSS & Bootstrap</span></div>
+                                <div class="w-full bg-white/10 rounded-full h-1.5" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="bg-accent h-1.5 rounded-full" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between text-xs text-gray-400 mb-1"><span>Backend (PHP/Python APIs)</span></div>
+                                <div class="w-full bg-white/10 rounded-full h-1.5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><div class="bg-accent h-1.5 rounded-full" style="width: 80%"></div></div>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-panel p-8 rounded-3xl hover:border-primary/50 transition-colors" aria-label="Developer Tools & Databases">
+                        <h3 class="text-xl font-semibold mb-6 text-white border-b border-white/10 pb-4">Tools & Databases</h3>
+                        <ul class="space-y-4">
+                            <li class="flex justify-between items-center text-gray-300">MySQL / SQL Server <i class="fa-solid fa-server text-gray-400" aria-hidden="true"></i></li>
+                            <li class="flex justify-between items-center text-gray-300">Git & GitHub <i class="fa-brands fa-github text-white" aria-hidden="true"></i></li>
+                            <li class="flex justify-between items-center text-gray-300">Power BI <i class="fa-solid fa-chart-bar text-yellow-500" aria-hidden="true"></i></li>
+                        </ul>
+                    </article>
+                </article>
+
+                <!-- Soft Skills Tags: semantically grouped for relevance grouping -->
+                <div class="mt-12 flex flex-wrap justify-center gap-4" role="region" aria-label="Professional Soft Skills">
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-sm text-gray-400 hover:text-white hover:border-white/30 transition-all">Problem Solving</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-sm text-gray-400 hover:text-white hover:border-white/30 transition-all">Critical Thinking</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-sm text-gray-400 hover:text-white hover:border-white/30 transition-all">Leadership</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-sm text-gray-400 hover:text-white hover:border-white/30 transition-all">Project Management</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================ SERVICES SECTION ================================ -->
+        <!-- Service offerings section targeting commercial search intent keywords -->
+        <section id="services" class="py-24 px-6 relative" aria-labelledby="services-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="text-center mb-16">
+                    <h2 id="services-heading" class="text-3xl md:text-4xl font-bold mb-4">What I Do</h2>
+                    <div class="w-20 h-1 bg-accent mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
+            
+                <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="region" aria-label="Professional Services Offered">
+                    <article class="glass-panel p-8 rounded-2xl tilt-card group border border-transparent hover:border-white/20 transition-all" aria-label="Machine Learning Solutions Service">
+                        <div class="w-14 h-14 bg-primary/20 rounded-xl flex items-center justify-center mb-6 text-primary group-hover:scale-110 transition-transform" aria-hidden="true">
+                            <i class="fa-solid fa-brain text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Machine Learning Solutions</h3>
+                        <p class="text-gray-400 text-sm">Developing predictive models and intelligent algorithms to automate processes and extract value from complex datasets.</p>
+                    </article>
+                    <article class="glass-panel p-8 rounded-2xl tilt-card group border border-transparent hover:border-white/20 transition-all" aria-label="Data Analysis Service">
+                        <div class="w-14 h-14 bg-secondary/20 rounded-xl flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform" aria-hidden="true">
+                            <i class="fa-solid fa-chart-line text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Data Analysis</h3>
+                        <p class="text-gray-400 text-sm">Transforming raw data into actionable business intelligence using Pandas, NumPy, and advanced statistical methods.</p>
+                    </article>
+                    <article class="glass-panel p-8 rounded-2xl tilt-card group border border-transparent hover:border-white/20 transition-all" aria-label="Dashboard Development Service">
+                        <div class="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center mb-6 text-accent group-hover:scale-110 transition-transform" aria-hidden="true">
+                            <i class="fa-solid fa-table-columns text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Dashboard Development</h3>
+                        <p class="text-gray-400 text-sm">Designing interactive, real-time analytics dashboards using Power BI and custom web frameworks.</p>
+                    </article>
+                    <article class="glass-panel p-8 rounded-2xl tilt-card group border border-transparent hover:border-white/20 transition-all" aria-label="Web Development Service">
+                        <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition-transform" aria-hidden="true">
+                            <i class="fa-solid fa-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Web Development</h3>
+                        <p class="text-gray-400 text-sm">Building scalable, responsive, and secure full-stack web applications using modern JavaScript, PHP, and Python frameworks.</p>
+                    </article>
+                    <article class="glass-panel p-8 rounded-2xl tilt-card group border border-transparent hover:border-white/20 transition-all" aria-label="Database Design Service">
+                        <div class="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center mb-6 text-green-400 group-hover:scale-110 transition-transform" aria-hidden="true">
+                            <i class="fa-solid fa-database text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Database Design</h3>
+                        <p class="text-gray-400 text-sm">Architecting optimized relational databases (MySQL, SQL Server) for high performance and secure data storage.</p>
+                    </article>
+                    <article class="glass-panel p-8 rounded-2xl tilt-card group border border-transparent hover:border-white/20 transition-all" aria-label="Python Automation Service">
+                        <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-6 text-yellow-400 group-hover:scale-110 transition-transform" aria-hidden="true">
+                            <i class="fa-brands fa-python text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Python Automation</h3>
+                        <p class="text-gray-400 text-sm">Creating robust scripts to automate repetitive workflows, web scraping, and system integrations.</p>
+                    </article>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================ FEATURED PROJECTS SECTION ================================ -->
+        <!-- Projects showcase section targeting commercial & informational intent keywords -->
+        <!-- Case studies demonstrate expertise in ML, Web Dev, Data Analytics, and Python development -->
+        <section id="projects" class="py-24 px-6 relative" aria-labelledby="projects-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="text-center mb-16">
+                    <h2 id="projects-heading" class="text-3xl md:text-4xl font-bold mb-4">Featured Work</h2>
+                    <div class="w-20 h-1 bg-accent mx-auto rounded-full" aria-hidden="true"></div>
+                    
+                    <!-- Zero-Latency Project Search (250ms Debounce): Filter projects by title, tech, or description -->
+                    <!-- This search input provides instant client-side filtering without page reload -->
+                    <!-- Debounce mechanism prevents UI thread blocking on rapid user input -->
+                    <div class="mt-8 max-w-md mx-auto">
+                        <input 
+                            id="project-search" 
+                            type="text" 
+                            placeholder="Search projects (Python, ML, Dashboard, etc.)" 
+                            class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-500 focus:outline-none focus:border-accent focus:bg-white/15 transition-all"
+                            aria-label="Search projects by title, technology, or description">
+                    </div>
+                </div>
+
+                <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="region" aria-label="Featured Projects and Case Studies">
+                    <!-- Project 1: AI Predictor -->
+                    <article class="glass-panel rounded-2xl overflow-hidden group flex flex-col h-full" aria-label="Student Performance Predictor - Machine Learning Project" data-project-card data-project-title="student performance predictor" data-project-tech="python, scikit-learn, machine learning" data-project-description="ai-based system utilizing machine learning to forecast academic trajectories">
+                        <div class="relative h-48 overflow-hidden bg-darkbg">
+                            <img 
+                                src="images/project1.svg" 
+                                alt="Interactive Student Performance Prediction System UI displaying machine learning model outputs" 
+                                width="600" 
+                                height="400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
+                            <div class="absolute inset-0 bg-darkbg/50 group-hover:bg-transparent transition-colors duration-500" aria-hidden="true"></div>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Student Performance Predictor</h3>
+                            <p class="text-sm text-gray-400 mb-4 flex-grow">AI-based system utilizing machine learning to forecast academic trajectories based on behavioral data.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Python</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Scikit-Learn</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-white/5 hover:bg-white/10 rounded border border-white/10 transition-colors" title="View Source Code on GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-primary/20 hover:bg-primary/40 text-primary rounded transition-colors" title="View Live Project Demo" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt mr-1" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Sales Dashboard -->
+                    <article class="glass-panel rounded-2xl overflow-hidden group flex flex-col h-full" aria-label="Sales Data Analytics Dashboard - Business Intelligence Project" data-project-card data-project-title="sales data analytics dashboard" data-project-tech="pandas, power bi, data analytics" data-project-description="interactive bi dashboard transforming raw sales data into actionable kpis">
+                        <div class="relative h-48 overflow-hidden bg-darkbg">
+                            <img 
+                                src="images/project2.svg" 
+                                alt="Interactive Sales Analytics Dashboard displaying real-time business intelligence metrics and KPIs" 
+                                width="600" 
+                                height="400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Sales Data Analytics Dashboard</h3>
+                            <p class="text-sm text-gray-400 mb-4 flex-grow">Interactive BI dashboard transforming raw sales data into actionable KPIs and visualizations.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Pandas</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Power BI</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-white/5 hover:bg-white/10 rounded border border-white/10 transition-colors" title="View Source Code on GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-primary/20 hover:bg-primary/40 text-primary rounded transition-colors" title="View Live Dashboard Demo" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt mr-1" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Face Detection -->
+                    <article class="glass-panel rounded-2xl overflow-hidden group flex flex-col h-full" aria-label="Face Detection System - Computer Vision Project" data-project-card data-project-title="face detection system" data-project-tech="python, opencv, computer vision" data-project-description="real-time computer vision application using opencv to identify and track facial landmarks">
+                        <div class="relative h-48 overflow-hidden bg-darkbg">
+                            <img 
+                                src="images/project3.svg" 
+                                alt="Real-time Face Detection System UI showcasing facial landmark identification and tracking" 
+                                width="600" 
+                                height="400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Face Detection System</h3>
+                            <p class="text-sm text-gray-400 mb-4 flex-grow">Real-time computer vision application using OpenCV to identify and track facial landmarks.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Python</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">OpenCV</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-white/5 hover:bg-white/10 rounded border border-white/10 transition-colors" title="View Source Code on GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-primary/20 hover:bg-primary/40 text-primary rounded transition-colors" title="View Live Computer Vision Demo" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt mr-1" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: E-Commerce -->
+                    <article class="glass-panel rounded-2xl overflow-hidden group flex flex-col h-full" aria-label="PHP E-Commerce Platform - Full Stack Web Development Project" data-project-card data-project-title="php e-commerce platform" data-project-tech="php, mysql, tailwind, full stack" data-project-description="scalable online store featuring secure authentication, cart management, and payment integration">
+                        <div class="relative h-48 overflow-hidden bg-darkbg">
+                            <img 
+                                src="images/project4.svg" 
+                                alt="E-Commerce Platform UI displaying product catalog, shopping cart, and checkout interface" 
+                                width="600" 
+                                height="400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">PHP E-Commerce Platform</h3>
+                            <p class="text-sm text-gray-400 mb-4 flex-grow">Scalable online store featuring secure authentication, cart management, and payment integration.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">PHP</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">MySQL</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Tailwind</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-white/5 hover:bg-white/10 rounded border border-white/10 transition-colors" title="View Source Code on GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-primary/20 hover:bg-primary/40 text-primary rounded transition-colors" title="View Live E-Commerce Store Demo" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt mr-1" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: ML Recommendation -->
+                    <article class="glass-panel rounded-2xl overflow-hidden group flex flex-col h-full" aria-label="ML Recommendation Engine - Machine Learning Project" data-project-card data-project-title="ml recommendation system" data-project-tech="python, machine learning, collaborative filtering" data-project-description="collaborative filtering engine that suggests personalized content based on user interaction history">
+                        <div class="relative h-48 overflow-hidden bg-darkbg">
+                            <img 
+                                src="images/project5.svg" 
+                                alt="Machine Learning Recommendation Engine UI displaying personalized content suggestions" 
+                                width="600" 
+                                height="400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">ML Recommendation System</h3>
+                            <p class="text-sm text-gray-400 mb-4 flex-grow">Collaborative filtering engine that suggests personalized content based on user interaction history.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Python</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">Machine Learning</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-white/5 hover:bg-white/10 rounded border border-white/10 transition-colors" title="View Source Code on GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-primary/20 hover:bg-primary/40 text-primary rounded transition-colors" title="View Live Recommendation Engine Demo" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt mr-1" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Finance Dashboard -->
+                    <article class="glass-panel rounded-2xl overflow-hidden group flex flex-col h-full" aria-label="Personal Finance Dashboard - Full Stack Web Application Project" data-project-card data-project-title="personal finance dashboard" data-project-tech="javascript, rest api, full stack" data-project-description="full-stack web app for expense tracking, budget forecasting, and financial data visualization">
+                        <div class="relative h-48 overflow-hidden bg-darkbg">
+                            <img 
+                                src="images/project6.svg" 
+                                alt="Personal Finance Dashboard UI displaying expense tracking, budget forecasts, and financial data visualization" 
+                                width="600" 
+                                height="400"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                loading="lazy">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-bold text-white mb-2">Personal Finance Dashboard</h3>
+                            <p class="text-sm text-gray-400 mb-4 flex-grow">Full-stack web app for expense tracking, budget forecasting, and financial data visualization.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">JavaScript</span>
+                                <span class="text-[10px] px-2 py-1 bg-white/10 rounded text-gray-300">REST API</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-white/5 hover:bg-white/10 rounded border border-white/10 transition-colors" title="View Source Code on GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <a href="#" class="flex-1 text-center py-2 text-sm bg-primary/20 hover:bg-primary/40 text-primary rounded transition-colors" title="View Live Finance Dashboard Demo" rel="noopener noreferrer"><i class="fa-solid fa-external-link-alt mr-1" aria-hidden="true"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================ EXPERIENCE SECTION ================================ -->
+        <!-- Career timeline section establishing professional progression and domain authority -->
+        <section id="experience" class="py-24 px-6 relative" aria-labelledby="experience-heading">
+            <div class="max-w-4xl mx-auto gs-reveal">
+                <div class="text-center mb-16">
+                    <h2 id="experience-heading" class="text-3xl md:text-4xl font-bold mb-4">Career Evolution</h2>
+                    <div class="w-20 h-1 bg-accent mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
+
+                <article class="relative timeline-container py-8" role="region" aria-label="Professional Career Timeline">
+                    <!-- 2023 - Present: Full Stack Developer -->
+                    <article class="mb-12 flex justify-between items-center w-full md:w-1/2 md:ml-auto md:pl-10 relative">
+                        <div class="absolute left-0 md:-left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-darkbg border-4 border-primary z-10 hidden md:block" aria-hidden="true"></div>
+                        <div class="glass-panel p-6 rounded-2xl w-full relative">
+                            <span class="text-xs font-bold text-primary mb-1 block">2023 - Present</span>
+                            <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
+                            <p class="text-gray-400 text-sm mt-2">Architecting end-to-end web applications and managing databases. Ensuring scalable and secure server-side logic.</p>
+                        </div>
+                    </article>
+
+                    <!-- 2022 - 2023: Freelance Data Analyst -->
+                    <article class="mb-12 flex justify-between items-center w-full md:w-1/2 md:pr-10 relative flex-row-reverse md:flex-row">
+                        <div class="absolute right-0 md:-right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-darkbg border-4 border-secondary z-10 hidden md:block" aria-hidden="true"></div>
+                        <div class="glass-panel p-6 rounded-2xl w-full text-left md:text-right relative">
+                            <span class="text-xs font-bold text-secondary mb-1 block">2022 - 2023</span>
+                            <h3 class="text-xl font-bold text-white">Freelance Data Analyst</h3>
+                            <p class="text-gray-400 text-sm mt-2">Provided business intelligence solutions, building predictive models and generating actionable reports using Python.</p>
+                        </div>
+                    </article>
+
+                    <!-- 2021 - 2022: Software Engineering Intern -->
+                    <article class="flex justify-between items-center w-full md:w-1/2 md:ml-auto md:pl-10 relative">
+                        <div class="absolute left-0 md:-left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 rounded-full bg-darkbg border-4 border-accent z-10 hidden md:block" aria-hidden="true"></div>
+                        <div class="glass-panel p-6 rounded-2xl w-full relative">
+                            <span class="text-xs font-bold text-accent mb-1 block">2021 - 2022</span>
+                            <h3 class="text-xl font-bold text-white">Software Engineering Intern</h3>
+                            <p class="text-gray-400 text-sm mt-2">Assisted in developing core features, bug fixing, and participating in agile development workflows.</p>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================ STATISTICS SECTION ================================ -->
+        <!-- Key metrics section establishing professional credibility and scale -->
+        <section class="py-24 px-6 relative bg-white/[0.01] border-y border-white/5" aria-labelledby="stats-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-20" role="region" aria-label="Professional Statistics">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold text-primary mb-2 counter" data-target="25" role="status" aria-live="polite">0</div>
+                        <p class="text-gray-400 text-sm uppercase tracking-wider">Projects</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold text-secondary mb-2 counter" data-target="15" role="status" aria-live="polite">0</div>
+                        <p class="text-gray-400 text-sm uppercase tracking-wider">Tech Mastered</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold text-accent mb-2 counter" data-target="10" role="status" aria-live="polite">0</div>
+                        <p class="text-gray-400 text-sm uppercase tracking-wider">Clients</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold text-white mb-2 counter" data-target="8" role="status" aria-live="polite">0</div>
+                        <p class="text-gray-400 text-sm uppercase tracking-wider">Certificates</p>
+                    </div>
+                </div>
+
+                <!-- ================================ CERTIFICATIONS SECTION ================================ -->
+                <!-- Professional credentials section establishing technical expertise validation -->
+                <div class="text-center mb-10 mt-20">
+                    <h2 id="stats-heading" class="text-3xl font-bold mb-4">Official Certifications</h2>
+                </div>
+                <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" role="region" aria-label="Professional Certifications and Credentials">
+                    <article class="glass-panel p-6 rounded-2xl flex items-center gap-4 group cursor-default" aria-label="Python Development Certification">
+                        <i class="fa-brands fa-python text-3xl text-primary group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Python Development</h4>
+                            <span class="text-xs text-gray-500">Verified Credentials</span>
+                        </div>
+                    </article>
+                    <article class="glass-panel p-6 rounded-2xl flex items-center gap-4 group cursor-default" aria-label="Machine Learning Certification">
+                        <i class="fa-solid fa-brain text-3xl text-secondary group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Machine Learning</h4>
+                            <span class="text-xs text-gray-500">Verified Credentials</span>
+                        </div>
+                    </article>
+                    <article class="glass-panel p-6 rounded-2xl flex items-center gap-4 group cursor-default" aria-label="Data Analytics Certification">
+                        <i class="fa-solid fa-chart-simple text-3xl text-accent group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Data Analytics</h4>
+                            <span class="text-xs text-gray-500">Verified Credentials</span>
+                        </div>
+                    </article>
+                    <article class="glass-panel p-6 rounded-2xl flex items-center gap-4 group cursor-default" aria-label="Full-Stack Web Development Certification">
+                        <i class="fa-solid fa-laptop-code text-3xl text-gray-300 group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Full-Stack Web Dev</h4>
+                            <span class="text-xs text-gray-500">Verified Credentials</span>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================ TESTIMONIALS SECTION ================================ -->
+        <!-- Social proof section for credibility and trust signals -->
+        <section class="py-24 px-6 relative" aria-labelledby="testimonials-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="text-center mb-16">
+                    <h2 id="testimonials-heading" class="text-3xl md:text-4xl font-bold mb-4">Client Feedback</h2>
+                    <div class="w-20 h-1 bg-accent mx-auto rounded-full" aria-hidden="true"></div>
+                </div>
+                <article class="grid grid-cols-1 md:grid-cols-3 gap-8" role="region" aria-label="Client Testimonials">
+                    <article class="glass-panel p-8 rounded-3xl relative" aria-label="Testimonial from Tech Founder">
+                        <i class="fa-solid fa-quote-left text-4xl text-white/10 absolute top-6 right-6" aria-hidden="true"></i>
+                        <p class="text-gray-400 text-sm mb-6 relative z-10 italic">"Shayan's ability to translate complex machine learning concepts into a seamless web application was incredible. Highly recommend his architecture skills."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-tr from-primary to-accent rounded-full" aria-hidden="true"></div>
+                            <div>
+                                <h5 class="text-white text-sm font-bold">Tech Founder</h5>
+                                <p class="text-xs text-gray-500">Startup CEO</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="glass-panel p-8 rounded-3xl relative" aria-label="Testimonial from Data Director">
+                        <i class="fa-solid fa-quote-left text-4xl text-white/10 absolute top-6 right-6" aria-hidden="true"></i>
+                        <p class="text-gray-400 text-sm mb-6 relative z-10 italic">"The dashboard he built using Python and Power BI completely transformed how we analyze our monthly KPIs. Fast, responsive, and beautifully designed."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-tr from-secondary to-blue-500 rounded-full" aria-hidden="true"></div>
+                            <div>
+                                <h5 class="text-white text-sm font-bold">Data Director</h5>
+                                <p class="text-xs text-gray-500">Enterprise Agency</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="glass-panel p-8 rounded-3xl relative" aria-label="Testimonial from Project Manager">
+                        <i class="fa-solid fa-quote-left text-4xl text-white/10 absolute top-6 right-6" aria-hidden="true"></i>
+                        <p class="text-gray-400 text-sm mb-6 relative z-10 italic">"A true full-stack professional. Shayan handled the PHP backend, database design, and modern frontend without missing a beat."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-gradient-to-tr from-accent to-green-500 rounded-full" aria-hidden="true"></div>
+                            <div>
+                                <h5 class="text-white text-sm font-bold">Project Manager</h5>
+                                <p class="text-xs text-gray-500">E-Commerce Firm</p>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================ CONTACT / CTA SECTION ================================ -->
+        <!-- Primary call-to-action section with contact form and direct contact information -->
+        <section id="contact" class="py-24 px-6 relative border-t border-white/5" aria-labelledby="contact-heading">
+            <div class="max-w-7xl mx-auto gs-reveal">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <article>
+                        <h2 id="contact-heading" class="text-4xl font-bold mb-6 text-white">Let's Build Something <span class="text-accent">Extraordinary.</span></h2>
+                        <p class="text-gray-400 mb-10">Whether you need a predictive ML model, a full-stack web application, or deep data analysis, I'm ready to turn your ideas into reality.</p>
+                        
+                        <div class="space-y-6">
+                            <!-- Email Contact -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 glass-panel rounded-full flex items-center justify-center text-primary" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase">Email</p>
+                                    <p id="contact-email" class="text-white font-medium">shayannawaz510@gmail.com</p>
+                                </div>
+                            </div>
+                            <!-- Phone Contact -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 glass-panel rounded-full flex items-center justify-center text-secondary" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase">Phone</p>
+                                    <p id="contact-phone" class="text-white font-medium">+92 310 1116773</p>
+                                </div>
+                            </div>
+                            <!-- Location Contact -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 glass-panel rounded-full flex items-center justify-center text-accent" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <p class="text-xs text-gray-500 uppercase">Location</p>
+                                    <p id="contact-location" class="text-white font-medium">Peshawar, Pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Contact Form: Uses mailto: fallback for universal compatibility -->
+                    <article class="glass-panel p-8 md:p-10 rounded-3xl">
+                        <form id="contact-form" class="space-y-6" aria-label="Contact Form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="contact-name" class="block text-xs text-gray-400 mb-2 uppercase tracking-wide">Name</label>
+                                    <input id="contact-name" name="name" type="text" class="w-full bg-darkbg/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="John Doe" aria-label="Your Name" required>
+                                </div>
+                                <div>
+                                    <label for="contact-email-input" class="block text-xs text-gray-400 mb-2 uppercase tracking-wide">Email</label>
+                                    <input id="contact-email-input" name="email" type="email" class="w-full bg-darkbg/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="john@example.com" aria-label="Your Email" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="contact-subject" class="block text-xs text-gray-400 mb-2 uppercase tracking-wide">Subject</label>
+                                <input id="contact-subject" name="subject" type="text" class="w-full bg-darkbg/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="Project Inquiry" aria-label="Message Subject" required>
+                            </div>
+                            <div>
+                                <label for="contact-message" class="block text-xs text-gray-400 mb-2 uppercase tracking-wide">Message</label>
+                                <textarea id="contact-message" name="message" rows="4" class="w-full bg-darkbg/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="How can I help you?" aria-label="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-primary to-accent hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-primary/20" title="Submit Contact Form">Send Message</button>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================ FOOTER ================================ -->
+    <!-- Footer with semantic nav, social links with rel attributes, and copyright -->
+    <footer class="bg-black/50 border-t border-white/5 py-12 px-6" role="contentinfo">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <a href="#hero" class="text-2xl font-bold tracking-tighter text-white" title="Back to Top">Shayan<span class="text-accent">.</span></a>
+                <p class="text-gray-500 text-sm mt-2">Software Engineer & Data Professional.</p>
+            </div>
+            
+            <!-- Footer Navigation -->
+            <nav class="flex gap-6" aria-label="Footer Navigation">
+                <a href="#about" class="text-gray-400 hover:text-white text-sm transition-colors" title="Navigate to About Section">About</a>
+                <a href="#services" class="text-gray-400 hover:text-white text-sm transition-colors" title="Navigate to Services Section">Services</a>
+                <a href="#projects" class="text-gray-400 hover:text-white text-sm transition-colors" title="Navigate to Projects Section">Projects</a>
+            </nav>
+
+            <!-- Social Media Links with rel="noopener noreferrer" for security -->
+            <nav class="flex gap-4" aria-label="Social Media Links">
+                <a href="https://www.linkedin.com/in/shayan-nawaz-35b2a7406" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary transition-all" title="Visit LinkedIn Profile" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="https://github.com/shayannawaz510-ops" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-all" title="Visit GitHub Profile" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/shayan_nawazz?igsh=MXg3YjU0b2gyanRuMw==" class="w-10 h-10 rounded-full glass-panel flex items-center justify-center text-gray-400 hover:text-white hover:bg-pink-500 transition-all" title="Visit Instagram Profile" rel="noopener noreferrer" aria-label="Instagram Profile"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            </nav>
+        </div>
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 text-center text-gray-600 text-sm">
+            &copy; <span id="year"></span> Shayan Nawaz. All rights reserved. Designed for the Future.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
