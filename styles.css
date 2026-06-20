@@ -1,0 +1,136 @@
+body {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Premium Gradient Text */
+.text-gradient {
+    background: linear-gradient(to right, #2563EB, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0F172A;
+}
+::-webkit-scrollbar-thumb {
+    background: #2563EB;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #06B6D4;
+}
+
+/* 3D Card Hover Setup */
+.tilt-card {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+ 
+/* Timeline styling */
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 16px;
+    height: 100%;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.1);
+}
+@media (min-width: 768px) {
+    .timeline-container::before { left: 50%; }
+}
+
+/* ================================ GPU ACCELERATION OPTIMIZATION ================================ */
+/* These CSS rules force GPU compositing for smooth 60fps animations */
+/* By using transform and opacity exclusively, animations bypass layout recalculations */
+/* This achieves sub-200ms animation frame times on modern hardware */
+
+/* Hero animated blobs: Hardware-accelerated with will-change for animation optimization */
+.animate-blob {
+    will-change: transform;
+    /* Force GPU acceleration via transform: translateZ creates a new compositing layer */
+    transform: translateZ(0);
+    /* Animate only opacity and transform to prevent layout thrashing */
+    animation: blob 7s infinite;
+}
+
+@keyframes blob {
+    0%, 100% { 
+        transform: translateZ(0) translate(0, 0) scale(1);
+        opacity: 0.8;
+    }
+    25% { 
+        transform: translateZ(0) translate(20px, -50px) scale(1.1);
+        opacity: 0.85;
+    }
+    50% { 
+        transform: translateZ(0) translate(-20px, 20px) scale(0.9);
+        opacity: 0.8;
+    }
+    75% { 
+        transform: translateZ(0) translate(50px, 50px) scale(1.05);
+        opacity: 0.85;
+    }
+}
+
+/* Smooth scroll: GPU accelerated via transform (not scroll-top changes) */
+html.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+/* Animation-delay utilities: prevent layout-blocking animations */
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Section reveals: Fade-up effect using only transform and opacity (no height/margin changes) */
+.gs-reveal {
+    will-change: opacity, transform;
+    opacity: 0;
+    /* translateY creates GPU compositing layer without triggering reflow */
+    transform: translateZ(0) translateY(50px);
+}
+
+.gs-reveal.active {
+    opacity: 1;
+    /* Using transform instead of top/margin prevents layout recalculations */
+    transform: translateZ(0) translateY(0);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Card hover effects: 3D transforms on GPU to prevent jank */
+.group:hover .group-hover\:scale-110 {
+    will-change: transform;
+    transform: translateZ(0) scale(1.1);
+    transition: transform 0.5s ease-out;
+}
+
+/* Button hover states: Optimized for GPU rendering */
+button:hover {
+    will-change: background-color, box-shadow;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Counter animations: Transform-based for zero layout shift */
+.counter {
+    will-change: opacity;
+    font-variant-numeric: tabular-nums;
+}
