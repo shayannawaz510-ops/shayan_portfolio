@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shayannawaz510-ops.github.io/shayan_portfolio/sitemap.xml
